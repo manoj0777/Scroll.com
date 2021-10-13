@@ -1,0 +1,311 @@
+html{
+    scroll-behavior:smooth;
+}
+
+
+body{
+   background-color:darkorange;
+}
+header{
+   top:0px;
+    background: url(https://wallpapercave.com/wp/wp3812098.jpg) no-repeat center center/cover;
+    height:700px;
+   
+}
+
+.banner .container{
+    padding-top:90px;
+    
+}
+
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgb(105, 189, 168);
+  box-shadow: lightpink;
+}
+.fixed-nav .links a {
+  color: rgb(44, 66, 68);
+}
+.fixed-nav .links a:hover {
+  color: darkcyan;
+}
+
+
+.nav-center{
+    width: 100%;
+    justify-content: space-between;
+     
+      padding:0px;
+}
+.nav-header{
+    display: flex;
+    justify-content: space-between;
+    padding:10px;
+     background-color: rgb(160, 211, 211);
+   
+
+}
+.logo{
+    height: 70px;
+}
+
+.nav-toggle{
+    background:transparent;
+    border: transparent;
+    font-weight: bold;
+    font-size: 30px;
+    color: brown;
+    cursor: pointer;
+}
+
+.nav-toggle:hover{
+    color: rgb(24, 21, 19);
+    background-color:rgb(209, 168, 168);
+    border-radius:5px;
+    box-shadow:10px 5px 10px 5px rgb(35, 88, 88);
+    
+}
+
+
+
+.links-container{
+   height: 0px;
+   overflow:hidden;
+   transition:all 0.3s linear;
+   width:100%;
+   background-color:rgb(215, 215, 238);
+   border-radius:10px;
+}
+
+.links-container ul{
+    list-style-type: none;
+   
+}
+
+.links-container li{
+    padding:15px;
+    
+}
+.links-container li:hover{
+    padding-left:5px;
+    /* background-color: rgb(101, 101, 245); */
+}
+
+.links-container li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color:rgb(8, 7, 7);
+    font-size:25px;
+     height:0px;
+   
+    
+}
+
+
+.show-links{
+    height: 200px;
+}
+
+.container{
+    text-align: center;
+    padding:0;
+    
+}
+
+.container h1{
+    font-size: 30px;
+    font-family:'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    color: rgb(64, 64, 78);
+    text-shadow: 3px 3px  rgb(161, 14, 38);
+
+}
+
+.container p{
+    font-size: 20px;
+    color:black;
+    justify-content: center;
+    
+
+}
+
+.container a{
+    background:transparent;
+    padding:6px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color:rgb(43, 33, 187);
+
+}
+
+.btn{
+    border: 3px solid;
+    border-radius:2px;
+}
+
+.btn.btn-white:hover{
+    background-color:antiquewhite;
+    color: rgb(19, 22, 22);
+    
+    transition: all 0.3s linear;
+}
+
+.title{
+    height:70vh;
+    text-align: center;
+    justify-content:center ;
+    text-transform: uppercase;
+    font-size:30px;
+    margin:5px;
+    
+    padding-top:0px;
+}
+
+.title span{
+    color:aqua;
+}
+#service{
+    background-color:yellow;
+}
+ footer{
+    height:15vh;
+    background-color:rgb(76, 0, 148);
+    justify-content:center;
+    text-align: center;
+    color:white;
+    text-transform:capitalize ;
+    padding-top:40px;
+    font-size:20px;
+}
+
+.top-link{
+    font-size:20px;
+    padding:10px;
+    height:20px;
+    position:fixed;
+    bottom:3rem;
+    right:3rem;
+    background:lightblue;
+    color: white;
+    border-radius:5px;
+    box-shadow:5px 2px 5px 2px white;
+    animation: bounce 2s ease-in-out infinite;
+    visibility: hidden;
+    z-index: -1;
+}
+
+.show-links{
+      visibility: visible;
+    z-index: 1;
+}
+
+
+
+@keyframes bounce {
+        0%{
+            transform:scale(1);
+        }
+        50%{
+            transform:scale(1.3);
+        }
+        100%{
+            transform:scale(1);
+        }
+}
+
+@media screen and (min-width:1000px){
+    .nav-toggle{
+        visibility:hidden;
+    }
+
+    .nav-header
+    {
+    background:transparent;
+    }
+
+    .nav-center{
+    display:flex;
+   }
+
+
+   .links-container{
+       background:transparent;
+    display:flex;
+    color:white;
+    padding-bottom:100px;
+    justify-content:center;
+    text-align:right;
+    
+    
+  }
+  .links{
+      display:flex;
+      height:auto;
+  }   
+   
+ ul{
+     padding:10px;
+ }     
+
+  
+  li{
+    padding:10px;
+}
+li:hover{
+    font-size:30px;
+    padding-left:5px;
+    
+    
+}
+
+li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color:rgb(31, 77, 70);
+    font-size:25px;
+    background-color: aqua;
+    border-radius:5px;
+    padding:5px;
+    box-shadow:5px 5px 5px 5px violet;
+   
+    
+}
+.container{
+    text-align: center;
+    padding:0 100px 0 100px;
+    
+}
+
+.container h1{
+    font-size: 50px;
+    font-family:'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    color: rgb(64, 64, 78);
+    text-shadow: 5px 5px  rgb(161, 14, 38);
+
+}
+
+.container p{
+    font-size: 25px;
+    color:black;
+    justify-content: center;
+    
+
+}
+
+.container a{
+    background:transparent;
+    padding:6px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color:rgb(43, 33, 187);
+
+}
+.top-link{
+    font-size:40px;
+    height:50px;
+}
+}
